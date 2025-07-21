@@ -936,22 +936,6 @@
     </script>
 </body>
 </html>
-            }, observerOptions);
-
-            progressBars.forEach(bar => {
-                observer.observe(bar);
-            });
-        });
-
-        // Add scroll-triggered animations
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            
-            
-            document.querySelector('.header::before') && 
-            (document.querySelector('.header').style.transform = `translateY(${rate}px)`);
-        });
     </script>
 </body>
 </html>
